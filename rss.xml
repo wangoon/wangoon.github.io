@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Wangoon Studio]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-tailwindcss-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 10 Apr 2020 18:31:54 GMT</lastBuildDate><item><title><![CDATA[Install Love2d in Ubuntu 16.04]]></title><description><![CDATA[Install Menggunakan ubuntu PPA. buka terminal favorit anda: jika sudah berhasil, cek versi love2d: Yay.. Love2d sudah berhasil di install…]]></description><link>https://gatsby-starter-blog-tailwindcss-demo.netlify.com/install-love2d/</link><guid isPermaLink="false">https://gatsby-starter-blog-tailwindcss-demo.netlify.com/install-love2d/</guid><pubDate>Tue, 26 Feb 2019 21:48:45 GMT</pubDate><content:encoded>&lt;p&gt;Install Menggunakan ubuntu PPA. buka terminal favorit anda:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ruby&quot;&gt;&lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;sudo add&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;apt&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;repository ppa&lt;span class=&quot;token symbol&quot;&gt;:bartbes&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;love&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;stable
+sudo apt&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;get update
+sudo apt install love&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;jika sudah berhasil, cek versi love2d:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;➜ love --version
+LOVE 11.1 (Mysterious Mysteries)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Yay.. Love2d sudah berhasil di install. Tetapi Belum afdol kalo belum membuat game &lt;code class=&quot;language-text&quot;&gt;hello world&lt;/code&gt; :D. Buat file &lt;code class=&quot;language-text&quot;&gt;main.lua&lt;/code&gt;, misal didalam folder project kita &lt;code class=&quot;language-text&quot;&gt;love_test&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;mkdir love_test
+touch main.lua&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;edit main.lua dengan editor favorit anda:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;lua&quot;&gt;&lt;pre class=&quot;language-lua&quot;&gt;&lt;code class=&quot;language-lua&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; love&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    love&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;graphics&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;cara menjalankan gamenya. masuk ke direktori love_test. jalankan perintah:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;zip -9 -r Test.love . 
+love Test.love&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5cc320a5cabfb4ab334f3cbc9fdcc797/ad00e/love2d-hello.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAB4UlEQVQoz3WRy27TQBSGJ3ZSp7YTjz321JfEwm6wE8e1g1MMapoqEeTSBqe5kaJGVEItVbtgzaISG96ANUK8Au/AlleADQ+C49IqauHo02h0dL75RzNge2+kP/SNrYbhNq1aqxy0rNqeFbTt+jP7cdcOD6rthTe4dNqLaufUaZ9sNhfl3nmtfWSH+8CpDwH0KPlJ3lsY7q5RcjSjvMSsaGa1UPL0rUbR8rUHVrwvPOrj2WeucUW7r7ObEQh3pxkxzGlN5fkVLZdAXKkUuF9Jc01Qgq+/jYtvvHcGyzNgbs/XxR1oRpw1J9bg9eDNesuNnMP+p1+Vjz9R8A7ar8DT1jnF7/D6gNMHRIZdkf+RnF7nKu9/GGffkXcBzQlw/Te02OILA6gd3JdJkkylVpL5oj78gsMPyHkLi4cgrxzyG11ejaAakencqhxrFEX9lZMmmUWScynap6h0wmtDwKkThPeROhbU4R35zr2XciYvGsdImyJ1IsjxNykzCUeiMkXKmEznkzni9qmS2GuIpZzOIXmEpBcC6guoBzh5hvFIkufSxoQkmf8nJ6cSWST0EOwjroNgF8j6MUZjjI8wfsmyPk1bNG3HMEyFYasM6zJ5j+FqLKyzfMAyrsh1xVxPZDsxfwAssEfavN1sDAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Love2d hello world&quot;
+        title=&quot;Love2d hello world&quot;
+        src=&quot;/static/5cc320a5cabfb4ab334f3cbc9fdcc797/fcda8/love2d-hello.png&quot;
+        srcset=&quot;/static/5cc320a5cabfb4ab334f3cbc9fdcc797/12f09/love2d-hello.png 148w,
+/static/5cc320a5cabfb4ab334f3cbc9fdcc797/e4a3f/love2d-hello.png 295w,
+/static/5cc320a5cabfb4ab334f3cbc9fdcc797/fcda8/love2d-hello.png 590w,
+/static/5cc320a5cabfb4ab334f3cbc9fdcc797/efc66/love2d-hello.png 885w,
+/static/5cc320a5cabfb4ab334f3cbc9fdcc797/c83ae/love2d-hello.png 1180w,
+/static/5cc320a5cabfb4ab334f3cbc9fdcc797/ad00e/love2d-hello.png 1366w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
